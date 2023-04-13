@@ -20,7 +20,7 @@ const people : [number, string][] = [
 // INTERSECTIONS - Situações que a gnt quer que a variável possua um tipo ou outra
 const productId : string | number = 1
 
-// ENUM - Bom em situações em que tem umvalor que sempre vai ser atribuid a outro valor.
+// ENUM - Bom em situações em que tem um valor que sempre vai ser atribuida a outro valor.
 enum Direction {
     Up = 1,
     Down = 2,   
@@ -34,4 +34,6 @@ const productName : any = 'Boné'
 // let itemId = productName as string
 let itemId = <string>productName 
 
- 
+ {/* ------ FUNÇÕES NO TYPESCRIPT ------ */}
+
+
