@@ -10,6 +10,7 @@ type User = {
     email : string
     password? : string // se colocar o "?" avisa ao ts que é opcional
     orders: Order[]
+    register(): string
 }
 
 const user : User = {
@@ -17,7 +18,10 @@ const user : User = {
     age : 19,
     email : 'k@gmail.com',
     password : '123',
-    orders : [{productId: '1', price: 200}]
+    orders : [{productId: '1', price: 200}],
+    register() {
+        return 'aloha'
+    }
 }
 
 // Unios -  Une os tipos em uma variável só
@@ -30,7 +34,10 @@ const author: Author & User = {
     books : ['the books on the table', 'The last nigth', ' Times of steel'],
     email : 'atrbraga@gmail.com',
     firstName: 'Arthuro Braga',
-    orders : []
+    orders : [],
+    register() {
+        return 'aloha2.0'
+    }
 }
 
 // Interfaces - São parecidas com Types mas tem algumas diferenças.
